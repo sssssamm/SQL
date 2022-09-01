@@ -1,0 +1,22 @@
+
+CREATE TABLE Book_Store (id INTEGER PRIMARY KEY, name TEXT, genre TEXT, price INTEGER, year INTEGER, author TEXT);
+
+INSERT INTO book_store VALUES (1, "IT", "Horror", 29.99, 1986, "Stephen King");
+INSERT INTO Book_store Values (2, "It Ends With Us", "Romance", 17.99, 2016, "Colleen Hoover");
+Insert INTO Book_store VALUES (3, "Verity", "Mystery", 19.99, 2018, "Colleen Hoover");
+INSERT INTO Book_store VALUES (4, "The Shining", "Horror", 20.00, 1977, "Stephen King");
+INSERT INTO Book_store VALUES (5, "Shawshank Redemption", "Mystery", 19.99, 1982, "Stephen King");
+INSERT INTO Book_store VALUES (6, "Fire and Blood", "Fantasy", 29.99, 2018, "George R.R. Martin");
+INSERT INTO Book_store VALUES (7, "A Clash of Kings", "Fantasy", 34.99, 1998, "George R.R. Martin");
+INSERT INTO Book_store VALUES (8, "Hunter's Run", "Fantasy", 17.99, 2007, "George R.R. Martin");
+INSERT INTO Book_store VALUES (9, "The Lord of the Rings", "Fantasy", 29.99, 1954, "J.R.R Tolkien");
+INSERT INTO Book_store VALUES (10, "The Hobbit", "Fantasy", 9.99, 1937, "J.R.R. Tolkien");
+INSERT INTO Book_store Values (11, "Beowulf", "Fantasy", 18.99, 2014, "J.R.R. Tolkien");
+INSERT INTO Book_store VALUES (12, "Pride and Prejudice", "Satire", 39.99, 1813, "Jane Austen");
+INSERT INTO Book_store VALUES (13, "Sense and sensibility", "Romance", 20.99, 1811, "Jane Austen");
+INSERT INTO Book_Store Values (14, "Emma", "Comedy", 9.99, 1815, "Jane Austen");
+INSERT INTO Book_store VALUES (15, "The Watsons", "Romance", 9.99, 1805, "Jane Austin");
+
+Select * From Book_store Order by price desc;
+
+SELECT AVG(price) FROM Book_store where genre = "Horror"
